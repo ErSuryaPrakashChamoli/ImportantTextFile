@@ -1,0 +1,8 @@
+this is git proble i faced.
+
+1.pwd know present directory
+2.cd current diretory switch 
+3. git intit
+4.https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line
+5.than i face error "Could not resolve host: github.com"
+6.solution (git config --global --unset http.proxy ) add account
