@@ -6,3 +6,20 @@ this is git proble i faced.
 4.https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line
 5.than i face error "Could not resolve host: github.com"
 6.solution (git config --global --unset http.proxy ) add account
+
+
+    
+Git Tutorial – Operations & Commands
+Some of the basic operations in Git are:
+
+
+Initialize
+Add
+Commit
+Pull
+Push
+Some advanced Git operations are:
+
+Branching
+Merging
+Rebasing
