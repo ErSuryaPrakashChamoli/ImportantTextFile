@@ -6,9 +6,11 @@ this is git proble i faced.
 4.https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line
 5.than i face error "Could not resolve host: github.com"
 6.solution (git config --global --unset http.proxy ) add account
+7.command not taken git bash it out to command promt "$not show"
 
 
-    
+Target:1.open git bash though command promt    
+
 Git Tutorial – Operations & Commands
 Some of the basic operations in Git are:
 
@@ -24,4 +26,6 @@ Branching
 Merging
 Rebasing
 
-https://www.edureka.co/blog/git-tutorial/
+help:1.https://www.edureka.co/blog/git-tutorial/
+2.https://github.com/joshnh/Git-Commands
+
