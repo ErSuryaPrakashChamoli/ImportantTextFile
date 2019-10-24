@@ -1,0 +1,93 @@
+1.git init
+2.Git status
+3. git add -A. This command will add all the files to the index which are in the directory but not updated in the index yet. 
+4.git commit -m “<message>”
+5.git remote add origin <link of your central repository>
+6.git pull origin <branch-name>
+7. git push origin master 
+8.git push <remote> –force
+9.git push <remote> –force
+10.git checkout <branch_name> 
+11.git checkout -b[ branch_name]
+12.git merge <branch_name>
+
+
+top command:
+git config
+git init
+git clone
+git add
+git commit
+git diff
+git reset
+git status
+git rm
+git log
+git show
+git tag
+git branch
+git checkout
+git merge
+git remote
+git push
+git pull
+git stash
+
+1.git config
+Usage: git config –global user.name “[name]”
+
+Usage: git config –global user.email “[email address]”
+
+2.git init
+Usage: git init [repository name]
+
+3.git clone
+Usage: git clone [url]
+
+4.git add
+Usage: git add [file]
+
+5.Usage: git add *
+
+6.git commit
+Usage: git commit -m “[ Type in the commit message]”
+7.git diff
+Usage: git diff
+
+This command shows the file differences which are not yet staged.
+8.Usage: git diff –staged
+
+This command shows the differences between the files in the staging area and the latest version present.
+9.Usage: git diff [first branch] [second branch]
+
+This command shows the differences between the two branches mentioned.
+
+10.git reset
+Usage: git reset [file]
+11.Usage: git reset [commit]
+
+This command undoes all the commits after the specified commit and preserves the changes locally.
+12.Usage: git reset –hard [commit]
+
+This command discards all history and goes back to the specified commit.
+13.git status
+Usage: git status
+14.git rm
+Usage: git rm [file]
+15.git log
+Usage: git log
+16.Usage: git log –follow[file]
+
+This command lists version history for a file, including the renaming of files also.
+17.git show
+Usage: git show [commit]
+18.git tag
+Usage: git tag [commitID]
+19.git branch
+Usage: git branch
+20.Usage: git branch [branch name]
+
+This command creates a new branch.
+
+morehelp:https://www.edureka.co/blog/git-commands-with-example/
+
