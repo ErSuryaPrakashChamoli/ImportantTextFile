@@ -1,0 +1,6 @@
+1.git branch brancName
+2.git checkout branchName
+3.git branch(show branch)
+4.git add fileName
+5.git commit -m "Message"
+6.git push origin(add of your repositry) brancName
