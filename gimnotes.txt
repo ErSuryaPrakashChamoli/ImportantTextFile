@@ -1,0 +1,47 @@
+             gimp photoretouching
+ measure tool: shift+
+1.chapter 2 and 5 
+2.measure tool shift+M
+3.shift control and create new point and add with it
+4.clt +double click horizonal ruler
+5.alt+double click vertical rulere
+
+rotate tool: shift+R
+
+transformation:Shift+P
+
+cropong :shift+C
+
+-------exposure------
+1.slect by tool shift+O
+2.clt+t hide marching ants
+
+sometime increase exposure but it is some time 
+work 
+1.image layer duplicate
+2.shit+ctrl+d
+3.top layer change the mode to screen mode and adjust
+the opacity of theis layer
+
+4.colour level Image: Colors > Levels
+
+------removing object-------
+1.press c
+2.cltrl click and start paint
+
+---improving sharpness------
+1.Image: Filters > Enhance >
+Unsharp Mask. Despite
+
+----removing red eyes-------
+1.Image: Filters > Enhance >
+Red Eye Removal.
+
+shift and cltr use
+
+------global transformation------
+1.Image: Image
+> Scale Image.
+
+-----shearing animage-------
+1.shift +s
