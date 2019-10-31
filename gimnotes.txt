@@ -1,4 +1,5 @@
-             gimp photoretouching
+Page 1:date30Oct2019            
+ gimp photoretouching
  measure tool: shift+
 1.chapter 2 and 5 
 2.measure tool shift+M
@@ -45,3 +46,21 @@ shift and cltr use
 
 -----shearing animage-------
 1.shift +s
+
+-- Changing Brigtness,contrast, and levels
+1.free seltct tool "F"
+2.adjusting colors Image: Colors > Color Balance
+3.Image: Colors
+> Hue-Saturation.
+4Image: Colors > Curves
+
+------tips-------
+1. Duplicate the layer ( SHIFT+CTRL+D).
+2. Desaturate the lower (background) layer
+(Image: Colors > Desaturate).
+3. Change the blending mode of the upper layer
+to Multiply.
+4. Reduce the opacity of the upper layer to 60%.
+
+2.3:
+local transformation ---page2

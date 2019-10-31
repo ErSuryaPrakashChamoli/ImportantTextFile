@@ -1,0 +1,24 @@
+page 2:
+
+*******************************************Local Selection
+• In Replace mode, the existing selection is replaced
+by the new one.
+• In Add mode (also set if you press SHIFT ), the
+new selection augments the existing one.
+• In Subtract mode (CTRL ), the new selection
+is subtracted from the existing one.
+• In Intersect mode ( SHIFT+CTRL ), the final
+selection contains only the areas common to
+both the existing and the new selections.
+
+
+1. Free selrct F very handy tool
+2.Fuzzy select tool U known as Magic Wand tool use shift
+3.Select by color tool shift +O
+4.scissors seltect tool shift +I known as Intelligent Scissors
+
+panding 2.3
+
+
+
+continue page 3 chapter 5
