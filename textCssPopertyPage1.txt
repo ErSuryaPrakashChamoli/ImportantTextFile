@@ -1,0 +1,83 @@
+text with css
+1.fontFamily fontStack,googleFont(which is easy)
+just paste in header
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+ and css
+font-family: 'Lobster', cursive;
+2.text Size with css
+font size-xx-small,x-small ,medium,large,x-lagee,xx-lagee
+pt px
+ 1em=100%=16pixels
+
+There are also free em-to-pixel calculators to help you with on-the-fl y conversions:
+• http://pxtoem.com/
+Pixel font-size Em equivalent
+11 0.689
+12 0.750
+13 0.814
+14 0.875
+15 0.938
+16 1.000
+17 1.064
+18 1.125
+19 1.188
+20 1.250
+21 1.313
+22 1.375
+23 1.438
+24 1.500
+25 1.563
+26 1.625
+27 1.688
+28 1.750
+There are also free em-to-pixel calculators
+
+3.magine
+margin:0 20%;
+This margin property sets the margins of the page in shortcut form. The 0 value is for
+the top and bottom margins. The 20% value is for the left and right margins.
+
+4.border
+border:thin red solid
+
+You need to set specifi c rules to override the default styles for these properties. In this case,
+you will adjust the space between the heading 2 and the fi rst paragraph.
+
+margin-bottom:0em
+
+5.Setting paragraph line-height
+To improve readability of your text, you can change line-height
+line-height:1.75em
+
+6.Transforming text with CSS
+font-weight, text-transform, and letter-spacing.
+The fi rst setting you will modify is the font-weight for your main heading in order to
+decrease the thickness of the characters.
+
+text-transform:uppercase
+
+font-weight:lighter;
+text-transform:uppercase;
+The value lighter for the font-weight reduces the thickness of the letterforms further,
+and the value for text-transform converts your text to uppercase.
+
+letter-spacing:0.2em;
+Letter-spacing controls the amount of space between characters
+font-weight:normal
+
+
+********************************working with htmlLIst
+
+ul {
+font-size:0.875em;
+background-color:#E5DAB3;
+
+li {
+background-color:#AA6C7E;
+}
+
+ol {
+font-size:0.875em;
+margin-bottom:2em
+padding-left:0em
+list-style-position:inside
