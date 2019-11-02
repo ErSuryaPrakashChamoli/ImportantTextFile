@@ -1,0 +1,93 @@
+tip:
+
+monitors with a resolution
+of 1024 × 768 pixels
+
+varies from 800 × 600
+pixels to 960 × 600 pixels.
+
+2.
+image to grayscale
+
+img {
+filter: gray;
+}
+
+3.Use the border property on the img element, as shown in Figure 4-1:
+img {
+width: 300px;
+border: 2px solid #666;
+background: #fff;
+padding: 2px;
+}
+
+4.If you make an image a link, you can create a more complex presentation with the
+border property.
+a:hover img {
+border-style: solid;
+background: #999;
+}
+
+4.Setting a Rounded Border Around an Image
+
+Set the border value and then use the CSS3 border-radius property along with its
+browser-specific border-radius properties, as shown in the right side of Figure 4-2:
+div{
+background-image: url(beach.jpg);
+width: 375px;
+height: 500px;
+border: 8px solid #666;
+border-radius: 40px;
+-moz-border-radius: 40px;
+-webkit-border-radius: 40px;
+
+Specifying corners
+
+/* top-left corner */
+border-top-left-radius: 40px;
+-moz-border-radius-topleft: 40px;
+-webkit-border-top-left-radius: 40px;
+/* bottom-right corner */
+border-bottom-right-radius: 40px;
+-moz-border-radius-bottomright: 40px;
+-webkit-border-bottom-right-radius: 40px;
+/* bottom-left corner */
+border-bottom-left-radius: 40px;
+-moz-border-radius-bottomleft: 40px;
+-webkit-border-bottom-left-radius: 40px;
+}
+
+********* border-top-left-radius: 40px;
+
+5.Setting a Background Image
+body {
+background-image: url(bkgd.jpg);
+background-repeat: repeat-x;
+
+6.
+**background-position: 75px 150px;**
+html {
+height: 100%;
+}
+body {
+background-image: url(bkgd.jpg);
+background-repeat: no-repeat;
+background-position: 75px 150px;
+
+body {
+background-image: url(bkgd.jpg);
+background-repeat: no-repeat;
+background
+
+7 . Using Multiple Background Images on One HTML Element
+see refrence mulitple image add and position set retp
+Insert the image through the background-image property, making sure to set the width
+and height:
+#banner {
+width: 550px;
+height: 561px;
+overflow: hidden;
+background-image: url(whitehouse.jpg);
+background-position: 0;
+background-repeat: no-repeat;
+position: relative}
