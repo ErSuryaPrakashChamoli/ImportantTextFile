@@ -1,0 +1,76 @@
+ChnagePage
+1.Eliminating Page Margins
+html, body {
+margin: 0;
+padding: 0;
+}
+2. Techniques for Centering Elements on a Web Page
+To center text in a block-level element, use the text-align property:
+h1, h2, h3 {
+text-align: center;
+}
+
+
+3.h1, h2, h3 {
+margin-left: auto;
+margin-right: auto;
+width: 300px;
+}
+
+ margin-left and margin-right properties to auto (along with a value
+for the width property), you center the element inside its parent element.
+
+4.Tables
+<div class="center">
+<table>
+<tr>
+<td>This is the first cell</td>
+<td>This is the second cell</td>
+</tr>
+<tr>
+<td>This is the third cell, it's under the first cell</td>
+<td>This is the fourth cell, it's under the second cell.</td>
+</tr>
+</table>
+</div>
+
+
+.center {
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+}
+
+5.Images
+
+div width=50%
+margin-left=-half width of image width
+
+6.Placing a Page Border
+body {
+margin: 0;
+padding: 1.5em;
+border: 50px #666 ridge;
+}
+
+You can create a framing effect with other styles as well, such as dotted, dashed, solid,
+double, groove, inset, and outset
+
+7.Adding a Lightbox(Images sliderUp)
+https://www.w3schools.com/howto/howto_js_lightbox.asp
+
+8.Changing the Opacity on Elements
+
+#number4 {
+opacity: .4; /* .4 = 40% transparency */
+filter: alpha(opacity=40); /* 40 = 40% transparency */
+}
+
+
+9.Adjusting the Opacity of Background Colors
+#number4 {
+background-color: rgba(255, 255, 0, .4);
+}
+
+transparency: #66FFFF00.
+
