@@ -1,0 +1,205 @@
+1.Use the list-style-type property to change the bullet or type of counter:
+li {
+list-style-type: lower-roman;
+}
+
+square
+disc
+circle
+decimal
+decimal-leading-zero
+lower-roman
+upper-roman
+lower-alpha
+upper-alpha
+lower-latin
+upper-latin
+
+
+2. Changing the Color of a List Bullet
+<ul>
+<li><span>I'm Not the Same Person I was in the Database</span></li>
+<li><span>Past Breaches of Our Privacy</span></li>
+<li>The Best of Intentions</li>
+<li>Whatever Happened to Automation?</li>
+<li>The Smart Choice is Not Needing to Make One</li>
+</ul>
+
+
+ul {
+color:}
+
+ul span {
+color: black;
+}
+
+
+3. Writing Cross-Browser Indentation in Lists
+ul {
+margin-left: 40px;
+padding-left: 0px;
+}
+
+
+4. Placing Dividers Between List Items
+li {
+border-top: 1px solid black;
+padding: .3em 0;
+}
+
+ul {
+margin-left: 40px;
+padding-left: 0px;
+border-bottom: 1px solid black;
+list-style: none;
+width: 36%;
+}
+
+
+5. Creating Custom Image Markers for Lists
+li {
+list-style-type: disc;
+list-style-image: url(bullet.gif);
+}
+
+6.Moving the Marker Inside the List
+Use the list-style-position property and set the value to inside:
+li {
+list-style-position: inside;
+width: 33%;
+padding: 0;
+margin: 0;
+}
+ul {
+margin: 0;
+padding: 0 0 0 1em;
+}
+
+
+
+
+*****************Links and Navigation
+1.Removing Underlines from Links 
+Use the text-decoration property with the pseudo-class selector for unvisited and vis-
+ited links:
+a:link, a:visited {
+text-decoration: none;
+}
+
+*Text-decoration value
+ --Result
+*underline
+ --A line is placed beneath the text
+overline
+ A line is placed above the text
+blink
+ The text flashes
+line-through
+ A line is placed through the middle of the text
+none
+ No effect is associated with the text
+
+a:link {
+font-weight: bold;
+text-decoration: none;
+color: red;
+}
+a:visited {
+font-weight: bold;
+text-decoration: line-through;
+color: black;
+}
+
+
+2. Changing Link Colors
+Use the :link, :visited, :hover, and :active pseudo-classes, in that order:
+
+
+3. Removing Dotted Lines When Clicking on a Link in Internet
+Explorer
+a {
+outline: none;
+}
+
+4.Changing Link Colors in Different Sections of a Page
+First, wrap sections of the page with div elements and different attribute values:
+<div id="nav">
+[...]
+</div><!-- /#nav -->
+<div id="content">
+[...]
+</div><!-- /#content -->
+
+/* navigation link design */
+#nav a:link {
+color: blue;
+}
+#nav a:visited {
+color: purple;
+}
+/* content link design */
+#content a:link {
+color: white;
+}
+#content a:visited {
+color: yellow;
+}
+
+
+5. Placing Icons at the End of Different Kinds of Links
+
+t up links within a document:
+<p>Sed sed nisi. <a href="mailto:orders@csscookbook.com">Quote me on
+an estimate</a> nulla ligula. Etiam pulvinar,
+<a href="http://www.csscookbook.com/">CSS Cookbook web site</a> quisque
+ante quam, ultricies quis, rutrum dignissim, <a href="sample-chapter.pdf">
+fermentum</a> a, est. Nulla felis dolor, tempor non, posuere ut, ornare ac,
+eros. Cras in metus. Sed rutrum lectus ut nibh. Pellentesque ipsum.</p>
+Then use attribute selectors (see Recipe 2.5):
+a {
+text-decoration: none;
+font-weight: bold;
+}
+a[href^="mailto:"] {
+padding-right: 20px;
+background: url(mail.gif) no-repeat right;
+}
+a[href^="http://"] {
+padding-right: 20px;
+background: url(website.gif) no-repeat right;
+}
+a[href$="pdf"] {
+padding-right: 20px;
+background: url(document.gif) no-repeat right;
+}
+
+
+6. Changing Cursors
+Use the cursor property to change the cursor:
+a:link, a:visited {
+cursor: move;
+}
+
+
+7.Creating Rollovers Without JavaScript
+a:link {
+color: #777;
+text-decoration: none;
+}
+a:visited {
+color: #333;
+text-decoration: none;
+}
+a:link:hover, a:visited:hover {
+color: #777;
+background-color: #ccc;
+}
+a:link:active, a:visited:active {
+color: #ccc;
+background-color: #ccc;
+}
+
+
+8.Creating Text Navigation Menus and Rollovers
+
+
