@@ -1,0 +1,110 @@
+ 1.Modifying the Spacing Around a Form
+
+form {
+margin: 0;
+padding: 1em 0;
+border: 1px dotted red; /* set in order to see padding effect */
+}
+
+ most common modification is to adjust the padding at the top and bottom of the
+form.
+
+
+2. Removing the Space Around a Form
+form {
+display:padding:}
+inline;
+0
+
+By default, the form element is a block-level element, which means that it forces a line
+break above and below itself. To remove that spacing, change the default property to
+inline.
+
+
+3. Setting Styles for Input Elements
+
+4. Changing Styles on Form Elements When a User Clicks on
+Them
+
+Use the :focus pseudo-class to trigger a change in which CSS rules get applied to the
+form’s element, as shown
+
+.textinput:focus {
+background-color:}
+yellow;
+
+
+5. Applying Different Styles to Different Input Elements in
+the Same Form
+
+
+6.Setting Styles for textarea Elements
+Use a type selector to associate styles with textarea elements:
+textarea {
+width: 300px;
+height: 100px;
+background-color: yellow;
+font-size: 1em;
+font-weight: bold;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+border: 1px solid black;
+}
+
+By adding the :focus pseudo-class, you can change the style of the active textarea field:
+textarea:focus {
+background-color:}
+green;
+
+7. Setting Styles for select and option Elements
+select {
+color: white;
+background-color:font-size: 0.9em;
+}
+option {
+padding: 4px;
+}
+
+8.<select name="Topping_ID" size="6" multiple>
+<option value="1">Pepperoni</option>
+<option value="2" class="even">Sausage</option>
+<option value="3">Green Peppers</option>
+<option value="4" class="even">Pineapple</option>
+<option value="5">Chicken</option>
+<option value="6" class="even">Ham</option>
+<option value="7">Olives</option>
+<option value="8" class="even">Onions</option>
+<option value="9">Red Peppers</option>
+</select>
+
+
+select {
+font-size: 0.9em;
+}
+option {
+color: white;
+background-color:}
+option.even {
+color: blue;
+background-color:}
+
+
+9.Styling Form Buttons
+
+
+10. Creating an Image Submit Button
+<input type="image" name="submit" src="submit.gif" />
+
+11.Creating a Submit Button That Looks Like HTML Text
+<input type="submit" name="submit" value="send &raquo;" class="submit" />
+
+.submit {
+border: none;
+background-color:padding: 0;
+margin: 0;
+width: 5em;
+}
+
+
+.submit:hover {
+text-decoration:}
+underline
