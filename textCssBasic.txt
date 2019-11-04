@@ -1,0 +1,385 @@
+1.<p style="font-size: 150%">Hello, world!</p>
+
+2. Applying CSS Rules to a Web Page
+
+<style type="text/css">
+<!--
+body {
+font-family: verdana, arial, sans-serif;
+}
+h1 {
+font-size: 120%;
+}
+a {
+text-decoration: none;
+}
+p {
+font-size: 90%;
+}
+-->
+</style>
+
+CSS contains rules with two parts: selectors and properties.
+
+A selector identifies what portion of your web page gets styled. Within a selector are
+one or more properties and their values.
+The property tells the browser what to change, and the value lets the browser know
+what that change should be.
+
+The standard for writing CSS syntax includes the selector, which is normally the tag
+you want to style, followed by properties and values enclosed within curly braces:
+selector { property: value; }
+
+selector {
+property: value;
+property: value, value, value;
+property: value value value value;
+}
+selector, selector {
+property: value;
+}
+
+
+3. Using Basic Selectors to Apply Styles
+i.Type selectors
+Type selectors are selectors that name the element or HTML tag to style. The following
+rules apply font styles to the h1 and p elements within a web 
+h1 {
+font-size: 120%;
+}
+p {
+color: blue;
+}
+
+ii.Class selectors
+When you want to apply the same CSS rule on different elements, you can use a class
+selector.
+For example, you can use class selectors to identify warnings with boldface text in a
+paragraph as well as a list item.
+First, create a warning class selector preceded by a period (.), which is also known as a
+full stop:
+
+.warning {
+font-weight: bold;
+}
+
+
+iii.ID selectors
+ID selectors resemble class selectors except they appear once in the HTML document.
+An ID selector can appear multiple times in a CSS document, but the element an ID
+selector refers to appears only once in an HTML document.
+Often, ID selectors appear in a div to mark major divisions within a document, but you
+can use them elsewhere.
+To create an ID selector, use the hash symbol (#), followed immediately by a label or
+name:
+#navigation {
+border: 1px solid black;
+padding: 40px;
+}
+
+iv.Descendant selectors
+Descendant selectors allow for more granular control in picking parts of a web page
+than type and class selectors. Descendant selectors typically have two elements, with
+the second element being a descendant of the first:
+li a {
+text-decoration: none;
+}
+The following code adds the HTML in which a appears within li, as shown in Fig-
+ure 2-12:
+<ul id="navigation">
+<li class="warning"><a href="http://csscookbook.com">Apples</a></li>
+<li><a href="http://csscookbook.com">Bananas</a></li>
+<li><a href="http://csscookbook.com">Cherries</a></li>
+</ul>
+In this example, every time there is a link or a element within a list item or li element,
+this CSS rule is applied.
+
+v.Universal selectors
+The universal selector is represented with an asterisk ( *) and is applied to all elements,
+as shown in Figure 2-13.
+In the following code, every element containing HTML text would be styled with Ver-
+dana, Arial, or some other sans serif font:
+2.2 Using Basic Selectors to Apply Styles
+
+* {
+font-family: Verdana, Arial, sans-serif;
+}
+
+
+4. Applying Child Selectors
+With a child selector, an element is styled if it is the direct descendant of its parent
+element.
+
+
+div > strong {
+text-decoration: none;
+}
+
+
+Nothing happens to this part of the sentence because this
+<strong>strong</strong> isn't the direct child of div.
+<div>
+However, this <strong>strong</strong> is the child of div.
+Therefore, it receives the style dictated in the CSS rule.
+</div>
+
+5.Applying Adjacent Selectors
+Use an adjacent sibling, which is formed by a plus sign between two selectors, as shown
+in the following code:
+li + li {
+font-size: 200%;
+}
+
+
+6.Applying Attribute Selectors
+[attribute]
+Searches for matches based on the attribute. For example:
+a[href] {
+text-decoration:}
+
+
+[attribute=val]
+Searches for matches based on the value. For example:
+a[href="csscookbook.com"]text-decoration: none;
+}
+
+
+7. Using Pseudo-Classes
+Create a pseudo-class. Here is an example of a pseudo-class that creates a common
+rollover effect on HTML links:
+a:link {
+color: blue;
+a:visited {
+color: purple;
+}
+a:hover {
+color: red;
+}
+a:active {
+color: gray;
+}
+
+
+8.Using Pseudo-Elements
+p::first-letter {
+font-size: 200%;
+font-weight: bold;
+}
+
+p::first-line {
+font-size: 200%;
+font-weight: bold;
+}
+
+ ::first-letter, ::first-line, ::before, and ::after.
+
+8. Determining When to Use Class and ID Selectors
+#banner and #content are ID selectors and .title
+and .content are class selectors:
+
+ID selectors identify unique attributes that have one instance in the document tree,
+whereas class selectors can be used frequently throughout the web page. Remember
+that ID selectors use a hash symbol (#) and class selectors begin with a period (.).
+
+web developers will use ID selectors to mark off unique sections of a web
+page. In the Solution, notice that the page is divided into the following sections:
+•
+•
+•
+•
+•
+Header
+Content
+Navigation
+Blipverts
+Siteinfo
+
+Some of these new HTML5 elements are:
+•
+•
+•
+•
+•
+•
+header
+nav
+section
+article
+aside
+footer
+
+
+9.Understanding CSS Properties
+
+Property
+ Value
+
+font-weight
+ bold
+
+border-color
+ Color name or color hexadecimal HTML value (e.g., #000000 for
+black and #ffffff for white)
+
+border-style
+ solid
+dotted
+dashed
+double
+
+text-align
+ left
+center
+right
+justify
+
+10. Understanding the Box Model
+Therefore, each block element contains four sections:
+Content
+Actual content such as text, images, Java applets, and other objects. The content
+area is in the middle of the box.
+Padding
+Surrounds the content area.
+Border
+The next-outer layer that surrounds the padding and makes up the box border.
+Margin
+The transparent box that begins at the edge of the border and expands beyond.
+The default margin value is 0, which lines up with the edge of the border. A border with
+a value of 0 lines up with the padding edge.
+Obviously, a padding value of 0 lies flush against the content. Values above 0 expand
+the boxes.
+
+
+11.Working with Shorthand Properties
+Then use just one instance of the font property instead of using font-style, font-
+size, and font-family:
+h3 {
+font: italic 18pt verdana, arial, sans-serif;
+}
+p {
+border: 2pt solid black;
+}
+
+
+order property can cover the values from the following properties:
+• border-color
+• border-width
+• border-style
+
+The font property is a shorthand property that combines five properties into one. The
+font property can cover the values from the following properties:
+• font-style
+• font-size/line-height
+• font-family
+• font-weight
+• font-variant
+
+If you use both font-size and line-height, separate their values with a forward slash:
+h3 {
+font: italic 18pt/20pt verdana, arial, sans-serif
+}
+
+
+Property
+ Values
+ Example
+
+background
+ background-color
+ background: url(book.gif)
+#999 no-repeat top;
+background-image
+background-repeat
+background-attachment
+background-position
+
+border
+ border-width
+ border: thin solid #000;
+border-left
+ border-style
+border-right
+ border-color
+border-top
+border-bottom
+
+font
+ font-style
+ font: 14px italic Verdana,
+Arial, sans-serif;
+font-variant
+font-weight
+font-size/line-height
+font-family
+caption
+icon
+menu
+message-box
+small-caption
+
+status-bar
+Property
+list-style
+margin
+padding
+Values
+list-style-type
+list-style-position
+list-style-image
+margin-top
+margin-right
+margin-bottom
+margin-left
+padding-top
+padding-right
+padding-bottom
+padding-left
+Example
+list-style: circle inside;
+margin: 5px 0px 5px 10px;
+margin: 15px 0;
+margin: 5px;
+padding: 5px 10% 15px 5%;
+padding: 7px 13px;
+padding: 6px;
+
+
+12.Using Floats
+
+You want to place an image on the left or right side, with text wrapping around the
+image instead of appearing above or below the image
+
+First create class selectors for the image:
+.leftFloat {
+float: left
+}
+.rightFloat {
+float: right
+}
+
+<img src="csscookbook.gif" class="leftFloat" alt="cover" />
+<p>This is the book cover for the <em>CSS Cookbook</em>.</p>
+<img src="csscookbook.gif" class="rightFloat" alt="cover" />
+<p>This is the book cover for the <em>CSS Cookbook</em>.</p>
+
+
+the second image overlaps the paragraph referencing the first image.
+This looks confusing and needs to be fixed. To work around that, use clear:
+p {
+clear:}
+left;
+The clear property tells the paragraph to appear after the end of the image flow. At the
+second img, the clear property pushes the image down to the first line after the previous
+line ends. Instead of lining up with the second p element, the image waits for a new line
+before showing up.
+
+
+ 14.Using Self-Clearing Floated Elements
+
+
+
+
+	
+
+
+
