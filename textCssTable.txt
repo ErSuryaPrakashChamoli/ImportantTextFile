@@ -1,0 +1,123 @@
+1.Setting the Borders and Cell Padding for Tables
+
+Use the padding property to address the amount of space between the content in the
+cell and the edges of the cell. Use the border property to set the borders on both the
+table and its cells:
+
+table {
+border-collapse: collapse;
+border: 5px solid #444;
+}
+td {
+padding: 10px;
+}
+454 | Chapter 9: Tables
+th {
+padding: 10px;
+color: white;
+background-color: black;
+}
+td, th+th {
+border: 5px solid #666;
+}
+td+td {
+border: 5px solid #ccc;
+text-align: center;
+}
+td#winner {
+border: 7px dotted #999;
+}
+
+There are two border models for HTML tables: collapse and separate. 
+. With the collapse
+model, table cells share borders and appear to be placed on top of each other, as shown
+in the first table in Figure 9-1.
+The second, bottom table in Figure 9-1 showcases the separate model, in which the
+table cells are detached with their own distinct borders.
+
+collapse model is more widely implemented by browsers,
+
+2.cell has border-style set to hidden or none,
+
+3.the border
+will be determined in the following order: double, solid, dashed, dotted, ridge,
+outset, groove, inset.
+
+
+4. Setting the Cell Spacing
+<table cellspacing="15">
+
+border-collapse: separate;
+border-spacing: 15px;
+
+ the use of the border-spacing property when the
+border-collapse value is set to separate:
+
+
+5.Setting the Style for Captions
+Use the caption element selector to stylize the caption:
+table caption {
+font: 1.5em Georgia, "Times New Roman", Times, serif;
+9.3 Setting the Style for Captions | 457
+padding:}
+1em;
+
+6.Setting the Styles Within Table Cells
+
+td a {
+display: block;
+background-color: #333;
+color: white;
+text-decoration: none;
+padding: 4px;
+}
+
+
+<td class="navText">
+<a href="/">Home</a>
+</td>
+
+td.navText a {
+font-size: x-small;
+}
+
+
+7.Setting the Styles for Table Header Elements
+th {
+text-align: left;
+padding: 1em 1.5em 1em 0.5em;
+color: white;
+border-right: 1px solid rgba(0, 204, 255, .8);
+border-bottom: 1px solid rgba(0, 204, 255, .8);;
+text-shadow: 0 1px 0 rgba(0, 0, 0, .8);
+background: blue url(title-glass.png) repeat-x 50%;
+font: .9em Arial, Helvetica, Verdana, sans-serif;
+}
+
+
+8.Removing Gaps from Images Placed in Table Cells
+Set the image to be displayed as a block-level element:
+td img {
+display: block;
+}
+
+
+9. Eliminating Gaps Between Table Cells
+
+
+10.Creating Alternating Background Colors in Table Rows
+tr {
+background-color: #eee;
+}
+tr:nth-child(odd) {
+background-color: #ccc;
+}
+
+
+11.Adding a Highlighting Effect on a Table Row
+Use the :hover pseudo-class on the tr element, as shown in Figure 9-9:
+tr:hover {
+background: yellow;
+}
+
+
