@@ -1,0 +1,471 @@
+1. Specifying Fonts
+
+Use the font-family property:
+body {
+font-family: Georgia, Times, "Times New Roman", serif;
+}
+main family
+serif
+ Georgia, Times, "Times New Roman", Garamond, "Century Schoolbook"
+sans-serif
+ Verdana, Arial, Helvetica, Trebuchet, Tahoma
+monospace
+ Courier, "MS Courier New", Prestige
+cursive
+ "Lucida Handwriting", "Zapf-Chancery"
+fantasy
+ Comic Sans, Whimsy, Critter, Cottonwood
+
+
+Tips:
+The most problematic generic font value is fantasy because this value is a catchall for
+any font that doesn’t fall into the other four categories. Designers rarely use this font
+because they can’t know what symbols will be displayed!
+Another problematic generic value is cursive because some systems can’t display a
+cursive font. If a browser can’t use a cursive font, it uses another default font in its place.
+Because text marked as cursive may not actually be displayed in a cursive font, de-
+signers often avoid this generic font value as well.
+If you want to use an unusual font that might not be installed on most people’s ma-
+chines, the rule of thumb is to set the last value for the font-family property to serif,
+sans-serif, or monospace. This approach maintains at least some legibility for the user
+viewing the web documen
+
+2.Using Web-Safe Fonts
+
+
+Here are examples of sans serif web-safe font stacks:
+font-family:
+ Verdana, Geneva, sans-serif;
+font-family:
+ Arial, Helvetica, sans-serif;
+font-family:
+ Tahoma, Geneva, sans-serif;
+font-family:
+ "Trebuchet MS", Area, Helvetica, sans-serif;
+font-family:
+ "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+Here are examples of serif web-safe font stacks:
+font-family: Georgia, "Times New Roman", Times, serif;
+font-family: "Palatino Linotype", "Book Antigua", Palatino, serif;
+font-family: "MS Serif", New York, serif;
+The following are monospace web-safe font stacks:
+font-family: "Courier New", Courier, monospace;
+font-family: "Lucida Console", Monaco, monospace;
+This is a cursive web-safe font stack:
+font-family: "Comic Sans MS", cursive;
+
+
+***Gill Sans is an excellent sans serif font;
+
+
+3. Setting an Ampersand Flourish
+<h1>The Lorem Ipsum <span class="amp">&amp;</span> Dolor</h1>
+
+span.amp {
+font-family: "Goudy Old Style", "Palatino", "Book Antiqua", serif;
+font-style: italic;
+font-weight: normal;
+}
+
+
+4. Forcing a Break on Really Long Words
+Use the word-wrap property with a value of break-word,
+
+p {
+border: 1px solid black;
+width: 150px;
+padding: 12px;
+}
+p.break {
+word-wrap: break-word;
+}
+
+The default value of word-wrap is default, which would allow the normal behavior of
+a long word to break the confines of the box.
+
+5.Specifying Font Measurements and Sizes
+
+Set the values of fonts using the font-size property:
+p {
+font-size: 0.9em;
+}
+
+
+The font-size property can take on different values and several units. In the Solution,
+I used em units. Other units are also available, such as percentages.
+Setting the size of the font with percentages causes the browser to calculate the size of
+the font based on the size of the parent element. For example, if the font size for the
+body is set to 12 pixels and the font size for the p element is set to 125%, the font size
+for the text in paragraphs is 15 pixels.
+You can use percentages, length units, and font-size keywords to set type size.
+
+Length units
+Length units fall into two categories: absolute and relative. Absolute length units in-
+clude the following:
+• Inches (in)
+• Centimeters (cm)
+• Millimeters (mm)
+• Points (pt)
+• Picas (pc)
+A point, in terms of the CSS specification, is equal to 1/72 of an inch, and a pica is equal
+to 12 points.
+A negative length value such as −25cm for the font-size property is not allowed.
+
+Relative units
+Relative units set the length of a property based on the value of another length property.
+Relative length units include the following:
+• Em
+• X-height (ex)
+• Pixels (px)
+Em units refer to the default font size set in the preference of the user’s browser, and
+x-height (ex) refers to the height of the lowercase letter x in the font.
+A pixel is the smallest dot that can be made on a computer screen.
+
+If you want to make text invisible, use the visibility or display CSS property instead
+of setting the size of fonts to zero:
+p {
+display:}
+none;
+A negative value for length, such as −25cm, for the font-size property isn’t allowed.
+
+6.Now the font sizes in your document will be equivalent to 10 pixels for each 1 em unit.
+For example, if you add the body declaration in the first part of the Solution, this rule
+sets the font size for a paragraph to 19 pixels:
+p {
+font-size: 1.9em /* displays text as 19 pixels */
+}
+
+
+7.Using font keywords
+ xx-small, x-small, small, medium, large, x-large, and
+xx-large.
+
+****Browsers set the default value of 16 pixels for web typography, which is equal to the
+medium keyword. By setting the font-size in the body element to 62.5%, the default
+value of 16 pixels reduces to 10 pixels:
+(16 pixels)62.5% = 10 pixels
+
+1em = 10px
+
+
+8. Centering Text
+Use the text-align property with the value set to center:
+hh3 {
+text-align:}
+p {
+text-align:}
+center;
+center;
+
+
+9.Setting Text to Be Justified
+Use the text-align property:
+P {
+width: 600px;
+text-align: justify;
+}
+
+
+10.Indicating an Overflow of Text with an Ellipsis
+Use the text-overflow property (along with Opera’s proprietary -o-text-overflow
+property):
+
+text-overflow: ellipsis;
+
+11.Removing Space Between Headings and Paragraphs
+Set the margin and padding for both the heading and paragraph to 0:
+h2 + p {
+margin-top: 0;
+padding-top: 0;
+} 
+h2 {
+margin-bottom: 0;
+padding-bottom: 0;
+}
+p {
+margin: 1em 0 0 0;
+padding: 0;
+}
+
+12.Setting a Simple Initial Cap
+
+Use the :first-letter pseudo-element to stylize the first letter of the paragraph
+p:first-letter {
+font-size: 1.2em;
+background-color:color: white;
+}
+black;
+
+
+Wrap a span element with a class attribute around the first letter of the first sentence
+of the first paragraph:
+<p><span class="initcap">O</span>nline, activity of exchanging ideas is sped
+up. The distribution of messages from the selling of propaganda
+to the giving away of disinformation takes place at a blindingly
+fast pace thanks to the state of technology &hellip;</p>
+Then set the style for the initial cap:
+p .initcap {
+font-size: 1.2em;
+background-color: black;
+color: white;
+}
+Initial caps, also known as versals, traditionally are enlarged in print to anything from
+a few points to three lines of text.
+
+
+13.**** Setting a Larger, Centered Initial Cap
+p {
+text-indent: 37%;
+line-height: 1em;
+}
+p:first-letter {
+font-size: 6em;
+line-height: 0.6em;
+font-weight: bold;
+}
+
+14.Setting an Initial Cap with Decoration (Imagery)
+
+15. Creating a Heading with Stylized Text
+
+h2 {
+font: bold italic 2em
+ Georgia, Times, "Times New Roman", serif;
+margin: 0;
+padding: 0;
+}
+p {
+margin: 0;
+padding: 0;
+}
+
+
+*******A shorthand property combines several properties into one. The font property is just
+one of these timesavers. One font property can represent the following values:
+•
+•
+•
+•
+•
+font-style
+font-variant
+font-weight
+font-size/line-height
+font-family
+The first three values can be placed in any order; the others need to be in the order
+shown.
+When you want to include the line-height value, put a forward slash between the
+font-size value and the line-height value:
+p {
+font: 1em/1.5em Verdana, Arial, sans-serif;
+}
+
+16. Creating a Heading with Stylized Text and Borders
+
+Use the border-top and border-bottom properties when setting the style for the heading:
+h2 {
+font: bold italic 2em Georgia, Times, "Times New Roman", serif;
+border-bottom: 2px dashed black;
+border-top: 10px solid black;
+margin: 0;
+padding: 0.5em 0 0.5em 0;
+font-size: 1em;
+}
+p {
+margin: 0;
+padding: 10px 0 0 0;
+}
+
+
+17.Stylizing a Heading with Text and an Image
+Use the background-image, background-repeat, and background-position properties:
+h2 {
+font: bold italic 2em Georgia, Times, "Times New Roman", serif;
+background-image: url(tall_grass.jpg);
+background-repeat: repeat-x;
+background-position: bottom;
+border-bottom: 10px solid #666;
+margin: 10px 0 0 0;
+padding: 0.5em 0 60px 0;
+}
+
+
+18.Creating a Pull Quote with HTML Text
+
+Use the blockquote element to indicate the pull quote semantically in the markup:
+<blockquote>
+<p>Ma quande lingues coalesce, li grammatica del resultant
+lingue es plu simplic e regulari quam ti del coalescent
+lingues.</p>
+<div class="source">John Smith at the movies</div>
+</blockquote>
+With CSS, apply the margin, padding, and color values to the blockquote element:
+blockquote {
+margin: 0;
+padding: 0;
+color: #555;
+}
+Next, set the style for the p and div elements nested in the blockquote element:
+blockquote p {
+font: italic 1em Georgia, Times, "Times New Roman", serif;
+font-size: 1em;
+margin: 1.5em 2em 0 1.5em;
+padding: 0;
+}
+blockquote .source {
+text-align: right;
+font-style: normal;
+margin-right: 2em;
+}
+
+19.Placing a Pull Quote to the Side of a Column
+Apply padding to the left side of the text:
+
+#content {
+padding-left: 200px;
+}
+
+Then use the float property to let the content wrap around the pull quote:
+blockquote {
+padding: 0;
+margin: 0;
+float: left;
+width: 180px;
+text-align: right;
+color: #666;
+}
+Next, set a negative margin value to pull the pull quote in the padding area on the left
+side of the text, as shown in Figure 3-28:
+blockquote {
+padding: 0;
+margin: 0;
+float: left;
+width: 180px;
+3.20 Placing a Pull Quote to the Side of a Column | 143
+margin-left: −200px;
+text-align: right;
+color: #666;
+}
+
+Setting the pull quote to the left side of the text is a two-step process.
+First, set enough room for the pull quote through the use of padding on the element
+that contains the entire passage. Then set a negative value for the blockquote on a floated
+pull quote to pull it out of the passage of text completely.
+This technique is not limited to pull quotes, but is also useful for placing photos to the
+left of text to reinforce the content.
+
+20. Setting the Indent in the First Line of a Paragraph
+Use the text-indent property to create the indent:
+p {
+text-indent: 2.5em;
+margin: 0 0 0.5em 0;
+padding: 0;
+}
+
+
+21.Setting the Indent of Entire Paragraphs
+
+p.normal {
+padding: 0;
+margin-left: 0;
+margin-right: 0;
+}
+p.large {
+margin-left: 33%;
+margin-right: 5%;
+}
+p.medium {
+margin-left: 15%;
+margin-right: 33%;
+}
+
+<p class="normal">Lorem ipsum dolor sit amet, consectetuer
+adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+laoreet dolore magna al iquam erat volutpat.</p>
+<p class="large">Epsum factorial non deposit quid pro quo hic
+escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+Souvlaki ignitus carborundum e pluribus unum.</p>
+<p class="medium ">Li Europan lingues es membres del sam
+3.24 Setting the Indent of Entire Paragraphs | 151
+familie. Lor separat existentie es un myth. Por scientie, musica,
+sport etc., li tot Europa usa li sam vocabularium</p>
+
+22.Styling the First Line of a Paragraph
+Use the :first-line pseudo-element to set the style of the first line:
+p:first-line {
+font-weight: bold;
+}
+
+
+23. Creating a Highlighted Text Effect
+Use the strong element to mark up the portions of text you want to highlight:
+<p>The distribution of messages from the selling of
+ propaganda
+to the giving away of disinformation takes place at
+ a blindingly
+fast pace thanks to the state of technology&hellip;
+ <strong>This
+change in how fast information flows revolutionizes
+ the
+culture.</strong></p>
+
+Then set the CSS rule to set the highlighted text through the background-color property:
+strong {
+font-weight: normal;
+background-color: yellow;
+}
+
+
+24.Changing the Text Selection Color
+Use the ::selection pseudo-element to set both the color and the background color of
+text:
+::selection {
+color: #90c;
+background: #cf0;
+}
+
+
+25.Changing Line Spacing
+Use the line-height property:
+p {
+line-height: 1.5em;
+}
+
+
+26. Placing a Shadow Behind Text
+Use the text-shadow property to set the color and placement of the shadow:
+h1 {
+font-size: 2.5em;
+font-family: Myriad, Helvetica, Arial, sans-serif;
+width: 66.6%;
+text-shadow: yellow .15em .15em .15em;
+margin: 0 0 0.1em 0;
+}
+
+
+27.Adjusting the Space Between Letters and Words
+h2 {
+font: bold italic 2em "Helvetica Nue", serif;
+margin: 0;
+padding: 0;
+letter-spacing: −0.1em;
+}
+
+
+To adjust the space between words, use the word-spacing property, as shown in Fig-
+ure 3-48:
+h2 {
+font: bold italic 2em "Helvetica Nue", serif;
+margin: 0;
+padding: 0;
+word-spacing: 0.33em;
+}
+
+
+
+
+
+
+
+
+
