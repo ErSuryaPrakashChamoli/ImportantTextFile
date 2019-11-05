@@ -1,0 +1,109 @@
+https://code.visualstudio.com/docs/editor/emmet
+
+1.If you want to use the Tab key for expanding the Emmet abbreviations, add the following setting:
+
+"emmet.triggerExpansionOnTab": true
+
+This setting allows using the Tab key for indentation when text is not an Emmet abbreviation
+
+2.write h1 and enter
+ p and enter
+div and enter
+ a and more
+
+ <h1>surya</h1>
+
+3.wirte .container enter or tab
+or
+div.container
+
+ <div class="container"></div>
+
+4. p.text-center enter or tab
+
+  <p class="text-center"></p>
+
+p#idname enter or tab
+
+  <p id="idname"></p>
+
+5.Concontaintion also possible
+
+p.className#idname enter or tab
+
+ <p class="className" id="idname"></p>
+
+6 two class
+
+div.containetr.full-width enter or tab
+
+ <div class="container full-width"></div>
+
+7. list item 
+
+li*3
+
+<li></li>
+ <li></li>
+    <li></li>
+
+8.child element of list
+ul>li*3
+
+ <ul>
+                 <li></li>
+                 <li></li>
+                 <li></li>
+             </ul>
+
+9.element with id
+ul>li*3#IdName
+
+
+  <ul>
+                 <li id="idname"></li>
+                 <li id="idname"></li>
+                 <li id="idname"></li>
+             </ul>
+
+10.with $ sign
+
+ul>li*3#idName$
+
+ul>
+    <li id="idname1"></li>
+    <li id="idname2"></li>
+    <li id="idname3"></li>
+</ul>
+
+11. div>h1+p
+
+
+<div>
+    <h1></h1>
+    <p></p>
+</div>
+
+
+to..section>h1+p
+
+12. div>(form>input+input)+p
+
+<div>
+    <form action=""></form>
+    <input type="text"><input type="text">
+    <p></p>
+</div>
+
+13. div>form>input:text[name="ersurya"]+input:password
+<div>
+            <form action=""><input type="text" name="ersurya" id=""></form>
+        </div>
+
+14.p{this is my pargraph} enter or tab
+
+<p>this is my pargrag</p>
+
+15. link:css
+<link rel="stylesheet" href="style.css">
+
