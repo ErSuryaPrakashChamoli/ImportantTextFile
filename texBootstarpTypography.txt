@@ -1,0 +1,208 @@
+Typography
+ 1.Bootstrap uses Helvetica Neue, Helvetica, Arial, and sans-
+serif in its default font stack. 
+
+All body
+copy has the font-size set at 14 pixels, with the line-height set at 20 pixels. The <p>
+tag has a margin-bottom of 10 pixels, or half the line-height.
+
+
+2.Headings
+
+All six standard heading levels have been styled in Bootstrap (see Figure 2-1), with the
+<h1> at 36 pixels tall, and the <h6> down to 12 pixels (for reference, default body text is
+14 pixels tall). In addition, to add an inline subheading to any of the headings, simply
+add <small> around any of the elements and you will get smaller text in a lighter color.
+In the case of the <h1>, the small text is 24 pixels tall, normal font weight (i.e., not bold),
+and gray instead of black:
+h1 small {
+font-size:24px;
+font-weight:normal;
+line-height:1;
+color:#999;
+}
+
+ <h1>heading1<small>headingSmall</small></h1>
+    <h2>heading2<small>headingSmall</small></h2>
+    <h3>heading3<small>headingSmall</small></h3>
+    <h4>heading4<small>headingSmall</small></h4>
+    <h5>heinding5<small>headingSmall</small></h5>
+    <h6>heading6<small>headingSmall</small></h6>
+
+3.Lead Body Copy
+To add some emphasis to a paragraph, add class="lead" (see Figure 2-2). This will
+give you larger font size, lighter weight, and a taller line height. This is generally used
+for the first few paragraphs in a section, but it can really be used anywhere:
+
+ <div class="container">
+        <h1>Inroduction</h1>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+
+i.Emphasis
+ using the <small> tag 
+
+ii.Bold
+To add emphasis to text, simply wrap it in a <strong> tag. This will add font-
+weight:bold; to the selected text.
+
+iii.Italics
+he <em> tag. The term “em” derives from the word
+“emphasis” and is meant to add stress to your text.
+
+
+note:You might be thinking, why not just use the <b> or <i> tags instead of
+<em> or <strong>? In HTML5, <b> is meant to highlight words or
+phrases without conveying additional importance—for example, key
+terms or names—while <i> is mostly for voice, technical terms, internal
+dialogue, and so on.
+
+iv.Emphasis Classes
+Along with <strong> and <em>, Bootstrap offers a few other classes
+
+<p class="muted">This content is muted</p>
+<p class="text-warning">This content carries a warning class</p>
+<p class="text-error">This content carries an error class</p>
+<p class="text-info">This content carries an info class</p>
+<p class="text-success">This content carries a success class</p>
+<p>This content has <em>emphasis</em>, and can be <strong>bold</strong></p>
+
+v.Abbreviations
+<abbr title="Real Simple Syndication">RSS</abbr>
+
+Add .initialism to an <abbr> for a slightly smaller font size (see Figure 2-5):
+<abbr title="rolling on the floor, laughing out loud">That joke had me ROTFLOL
+</abbr>
+
+vi.Addresses
+the <address> defaults to display:block;
+you’ll need to use <br> tags to add line breaks to the enclosed address text 
+
+<address>
+<strong>O'Reilly Media, Inc.</strong><br>
+1005 Gravenstein HWY North<br>
+Sebastopol, CA 95472<br>
+<abbr title="Phone">P:</abbr> <a href="tel:+17078277000">(707) 827-7000</a>
+</address>
+<address>
+<strong>Jake Spurlock</strong><br>
+<a href="mailto:#">flast@oreilly.com</a>
+</address>
+
+
+
+5.Blockquotes
+ For best
+results, and for line breaks, wrap each subsection in a <p> tag. Bootstrap’s default styling
+indents the text and adds a thick gray border along the left side. To identify the source
+
+
+of the quote, add the <small> tag, then add the source’s name wrapped in a <cite> tag
+before closing the </small> tag:
+<blockquote>
+<p>That this is needed, desperately needed, is indicated by the
+incredible uptake of Bootstrap. I use it in all the server software
+I'm working on. And it shows through in the templating language I'm
+developing, so everyone who uses it will find it's "just there" and
+works, any time you want to do a Bootstrap technique. Nothing to do,
+no libraries to include. It's as if it were part of the hardware.
+Same approach that Apple took with the Mac OS in 1984.</p>
+<small>Developer of RSS, <cite title="Source Title">Dave Winer</cite>
+</small>
+</blockquote>
+
+
+note:If you want a <blockquote> with content that is right aligned,
+add .pull-right to the tag. In addition to the right-aligned text, the
+entire blockquote is floated to the right. This creates nice pull-quotes
+in your content,
+
+
+6.Lists
+
+i.Unordered list
+remove the bullets from, add
+class="unstyled" to the opening <ul> tag 
+
+note:Personally, I hold a strong aversion to using the <br> tag. When I want
+a single-spaced line break, I place each line in an unstyled, unordered
+list. For example, if you want a condensed address box, like in
+
+
+ii.Definition list
+
+he <dl> to a horizontal layout, with the <dt> on the left side and the <dd>
+on the right, simply add class="dl-horizontal" to the opening tag
+
+note:Horizontal description lists will truncate terms that are too long to fit
+in the left column with text-overflow. Additionally, in narrower view‐
+ports, they will automatically change to the default stacked layout.
+
+
+7.table important
+
+If you want a nice, basic table style with just some light padding and horizontal dividers,
+add the base class of .table to any table (see Figure 2-13). The basic layout has a top
+border on all of the <td> elements:
+<table class="table">
+<caption>...</caption>
+<thead>
+<tr>
+<th>...</th>
+<th>...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+
+
+Optional Table Classes
+
+These four classes are: .table-striped, .table-
+bordered, .table-hover, and .table-condensed.
+
+Condensed table
+If you add the .table-condensed class, as shown in Figure 2-17, row padding is cut in
+half to condense the table. This is useful if you want denser information.
+
+
+8.Table Row Classes
+
+
+.success Indicates a successful or positive action.
+ Green
+.error
+ Indicates a dangerous or potentially negative action. Red
+.warning Indicates a warning that might need attention.
+ Yellow
+.info
+ Used as an alternative to the default styles.
+ Blue
+
+
+9 Forms
+Optional Form Layouts
+
+1.Search form
+Add .form-search to the <form> tag, and then add .search-query to the <input> for
+an input box with rounded corners and an inline submit button (see Figure 2-20):
+<form class="form-search">
+<input type="text" class="input-medium search-query">
+<button type="submit" class="btn">Search</button>
+</form>
+
+
+2.Inline form
+To create a form where all of the elements are inline and labels are alongside, add the
+class .form-inline to the <form> tag 
+
+
+
+
+
+

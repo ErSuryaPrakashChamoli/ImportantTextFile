@@ -1,0 +1,61 @@
+GImp page 2
+chapter 13
+
+*******************************Gimp Selection*****************************
+
+1.When you make a selection in GIMP, the selection’s
+outline is indicated by marching ants
+
+1. Copy the selection using Image: Edit > Copy
+or CTRL+C. The copy is placed in a buffer
+called the clipboard, which can hold only one
+image at a time.
+2.Image: Edit > Paste or pressing
+CTRL+V.
+3.New Layer, pressing
+CTRL+SHIFT+N
+4.Move tool (M)
+4.bottomleft
+corner of the Image window (or press
+SHIFT+Q).
+
+Quick mask
+
+*************The Seven Selection Tools
+1.Image:
+Windows > Dockable dialogs > Tool Options,
+
+The MODE option contains four ways to combine
+a new selection with an existing selection:
+
+1.Replace
+2.• Add the new selection to the current one.
+Pressing and holding SHIFT
+3.Subtract the new selection from the current
+one. Pressing CTRL
+4.Select the intersection of the old and new
+selections. Pressing SHIFT and CTRL
+
+ANTIALIASING option, if checked, smooths
+the boundary of a selection. Figures
+
+The FEATHER EDGES option, when checked,
+blurs the boundary between the selected and
+unselected regions.
+
+
+
+****1   The Rectangle Select Tool
+1.Image: Tools > Selection Tools menu,
+or by pressing R.
+
+The next option allows you to display guides
+while building the selection.
+
+tool option tick highlights check guide
+
+SHRINK MERGED box is checked, all
+the visible layers are considered rather than simply
+the current one
+
+***2   The Ellipse Select Tool

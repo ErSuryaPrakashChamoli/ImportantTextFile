@@ -1,0 +1,13 @@
+1.Css Backgound Image not loding
+
+body {background: url('image.jpeg');}
+
+background-image: url(nickcage.jpg); // No quotes around the file name
+
+background-image: url(../images/nickcage.jpg); // css and image live in subdorectories
+
+background-image: url(images/nickcage.jpg); // css lives with html but images is a subdirectory
+2.formating code in visual studio Alt+shift+F
+3.comment code cltl+K+C
+4.enter in new line
+ Cltr+enter

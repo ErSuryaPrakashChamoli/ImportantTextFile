@@ -1,0 +1,10 @@
+css layout
+
+1.step default size 
+margin-top:0px;
+margin-bottom:0px;
+2.widths: fixed-width layouts and
+flexible layouts.
+
+3.Understanding the CSS fl oat property
+Understanding the CSS float property
